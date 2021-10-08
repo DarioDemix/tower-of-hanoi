@@ -6,7 +6,7 @@ async function start() {
     while (wantToContinue !== 'n') {
         const numberOfDisks = await rl.ask("Insert the number of disks: ");
         towerOfHanoi(numberOfDisks);
-        wantToContinue = await rl.ask("Continue? (y/n): ")
+        wantToContinue = await rl.ask("\nContinue? (y/n): ")
     }
     rl.close();
 
